@@ -141,6 +141,8 @@ p {
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .flex-desc {
@@ -171,8 +173,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  /* width: 25%;
-  height: 25%; */
+  width: 25%;
+  height: 25vw;
 }
 
 .relate:first-child,
@@ -188,9 +190,10 @@ img {
 /*               HEADER                   */
 
 .logo {
-  width: 150px;
+  width: 100px;
   padding: 0;
   margin: 0;
+  order: 1;
 }
 
 .option {
@@ -198,10 +201,13 @@ img {
   margin: 0;
   padding: 0;
   flex-grow: 2.6;
+  order: 3;
 }
 
 nav.option ul {
   font-family: raleway-medium;
+  padding: 0;
+  font-size: 0.8rem;
 }
 
 nav.option ul li {
@@ -217,10 +223,11 @@ nav.option ul li {
   width: 100px;
   padding: 0;
   margin: 0;
+  order: 2;
 }
 
 div.cart img {
-  height: 70px;
+  height: 50px;
 }
 
 .header-text {
@@ -274,7 +281,7 @@ div#shop h3 a:hover {
 
 div.flex-shop-container img {
   position: relative;
-  height: 300px;
+  max-height: 300px;
 }
 
 /*                   FEATURED                       */
@@ -290,10 +297,10 @@ div.caracell h5 {
 /*                  BACKGROUNDS                    */
 .headbg {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url("../images/banner-girl.png") no-repeat center 40px,
+    url("../images/banner-girl.png") no-repeat center 70px,
     url("../images/flower-bkgd.jpg") repeat-x center;
   height: 300px;
-  background-size: contain;
+  background-size: cover, 100px, cover;
   background-position: relative;
   position: relative;
 }
@@ -352,12 +359,12 @@ ul.marginzero li {
 }
 
 ul.marginzero li a {
-  color: #e2574c;
+  color: white;
   list-style: none;
 }
 
 ul.marginzero li a:hover {
-  color: #b64036;
+  color: #e2574c;
   list-style: none;
 }
 
@@ -503,9 +510,17 @@ footer p a:hover {
 
   .relate {
     position: relative;
+    width: 25%;
+    height: 25%;
+  }
+
+  .relate:first-child,
+  .relate:last-child {
+    width: 50%;
   }
 
   .marginzero {
+    display: flex;
     margin: 3px 50px;
   }
 
@@ -522,6 +537,7 @@ footer p a:hover {
     margin: 0;
     padding: 0;
     flex-grow: 2.6;
+    order: 2;
   }
 
   nav.option ul {
@@ -541,6 +557,7 @@ footer p a:hover {
     width: 100px;
     padding: 0;
     margin: 0;
+    order: 3;
   }
 
   div.cart img {
@@ -576,8 +593,6 @@ footer p a:hover {
   .flex-shop-container {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    width: 100%;
   }
 
   div#shop h3 {
@@ -592,6 +607,7 @@ footer p a:hover {
   div#shop h3 a {
     color: white;
     text-decoration: none;
+    font-size: 0.8rem;
   }
 
   div#shop h3 a:hover {
@@ -641,9 +657,8 @@ footer p a:hover {
   }
 
   .flex-footer {
-    display: inline-block;
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+    align-content: space-between;
   }
 
   .socmed {
@@ -688,6 +703,32 @@ footer p a:hover {
   .address {
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  ul.marginzero li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    display: flex;
+    text-align: flex-end;
+    padding: 0;
+    margin-bottom: 2%;
+  }
+
+  ul.marginzero li a i {
+    vertical-align: baseline;
+  }
+
+  ul.marginzero li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  ul.marginzero li a:hover {
+    color: #e2574c;
+    list-style: none;
+    text-decoration: none;
   }
 
   div.address p {
@@ -853,13 +894,13 @@ footer p a:hover {
 
   /*                    SHOP                     */
 
-  /* .flex-shop-container {
+  .flex-shop-container {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     width: 100%;
-    margin: 5%, 0; 
-  /* } */
+    margin: 5%, 0;
+  }
 
   div#shop h3 {
     position: absolute;
