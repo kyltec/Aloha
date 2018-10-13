@@ -100,23 +100,29 @@
 
 body {
   color: #2d2d2d;
+  font-size: 14px;
+  font-family: raleway-light;
 }
 * {
   box-sizing: border-box;
 }
 
 h1 {
-  font-size: 1.6rem; /* changed from 4rem */
+  font-size: 2rem; /* changed from 4rem */
   margin-top: 10px;
   padding-bottom: 2%; /* changed from 15% */
   font-family: playfairdisplay-regular;
   font-weight: normal;
   position: relative;
+  margin-block-start: 0.67rem;
+  margin-block-end: 0.67rem;
 }
 
 h2 {
   font-family: playfairdisplay-italic;
   font-weight: normal;
+  margin-top: 10%;
+  margin-block-end: 0.83rem;
   font-size: 2rem;
 }
 
@@ -130,8 +136,9 @@ h4 {
 }
 
 p {
-  font-family: raleway-light;
-  font-size: 15px;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 12px;
 }
 
 .container {
@@ -143,11 +150,16 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 15px;
 }
 
 .flex-desc {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
+  width: 100%;
+  line-height: 2rem;
 }
 
 .white-text {
@@ -167,19 +179,30 @@ img {
   text-align: center;
 }
 
-.relate {
-  border: 1px solid white;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  width: 25%;
-  height: 25vw;
+.relate-wide {
+  flex-grow: 2;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  max-width: 100%;
 }
 
-.relate:first-child,
-.relate:last-child {
-  width: 50%;
+.relate-square {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.relate-square::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.relate-wide:before {
+  content: "";
+  display: block;
+  padding-top: 50%;
 }
 
 .marginzero {
@@ -190,15 +213,15 @@ img {
 /*               HEADER                   */
 
 .logo {
-  width: 100px;
-  padding: 0;
-  margin: 0;
   order: 1;
+  flex-basis: 50%;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .option {
   text-align: center;
-  margin: 0;
+  margin: 10px;
   padding: 0;
   flex-grow: 2.6;
   order: 3;
@@ -206,8 +229,9 @@ img {
 
 nav.option ul {
   font-family: raleway-medium;
-  padding: 0;
+  padding: 5px;
   font-size: 0.8rem;
+  border-top: 1px #d7d7d7 solid;
 }
 
 nav.option ul li {
@@ -219,11 +243,11 @@ nav.option ul li {
 }
 
 .cart {
-  text-align: right;
-  width: 100px;
-  padding: 0;
-  margin: 0;
+  display: flex;
   order: 2;
+  flex-basis: 50%;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 div.cart img {
@@ -240,7 +264,7 @@ div.cart img {
 }
 
 header h4 {
-  font-family: raleway-light;
+  font-family: raleway-medium;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -254,16 +278,68 @@ header ul li a:hover {
   color: #b64036;
 }
 
+/*                     ABOUT                     */
+
+.text-margin p {
+  font-size: 1.3rem;
+  padding: 5%;
+  line-height: 2rem;
+}
+
 /*                    SHOP                     */
 
 .flex-shop-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.mens-catagory-shop {
+  background: url("../images/mens-category.jpg") no-repeat center;
+  background-size: cover;
+  border-left: 0;
+  border-right: 0;
+}
+
+.trends-catagory-shop {
+  background: url("../images/trends-category.jpg") no-repeat center;
+  background-size: cover;
+  width: 50%;
+  height: 50vw;
+}
+
+.glasses-catagory-shop {
+  background: url("../images/glasses-category.jpg") no-repeat center;
+  background-size: cover;
+  width: 50%;
+  height: 50vw;
+}
+
+.sales-catagory-shop {
+  background: url("../images/sale-category.jpg") no-repeat center;
+  background-size: cover;
+  width: 50%;
+  height: 50vw;
+}
+
+.bags-catagory-shop {
+  background: url("../images/bags-category.jpg") no-repeat center;
+  background-size: cover;
+  width: 50%;
+  height: 50vw;
+}
+
+.womens-catagory-shop {
+  background: url("../images/womens-category.jpg") no-repeat center;
+  background-size: cover;
+  border-left: 0;
+  border-right: 0;
 }
 
 div#shop h3 {
   position: absolute;
-  z-index: 10;
+  /* z-index: 10; */
   text-align: center;
   top: 50%;
   left: 50%;
@@ -273,6 +349,7 @@ div#shop h3 {
 div#shop h3 a {
   color: white;
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
 div#shop h3 a:hover {
@@ -294,14 +371,18 @@ div.caracell h5 {
   color: #969696;
 }
 
+#featured .caracell {
+  width: 100%;
+  text-align: center;
+}
+
 /*                  BACKGROUNDS                    */
 .headbg {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
     url("../images/banner-girl.png") no-repeat center 70px,
-    url("../images/flower-bkgd.jpg") repeat-x center;
-  height: 300px;
-  background-size: cover, 100px, cover;
-  background-position: relative;
+    url("../images/flower-bkgd.jpg") repeat-x top;
+  height: 400px;
+  background-size: cover, 150px 370px, cover;
   position: relative;
 }
 
@@ -311,6 +392,7 @@ div.caracell h5 {
   width: 100%;
   height: 55vh;
   position: relative;
+  margin-block-start: 50px;
 }
 
 /*                           FOOTER                        */
@@ -386,6 +468,8 @@ input[type="submit"] {
   font-size: 20px;
   color: white;
   background-color: #e2574c;
+  top: 0;
+  right: 0;
 }
 
 input[type="submit"]:hover {
@@ -446,35 +530,21 @@ footer p a:hover {
 @media all and (min-width: 600px) {
   body {
     color: #2d2d2d;
+    font-size: 16px;
   }
 
   h1 {
-    font-size: 1.6rem; /* changed from 4rem */
+    font-size: 2.2rem;
     margin-top: 10px;
-    padding-bottom: 2%; /* changed from 15% */
+    padding-bottom: 2%;
     font-family: playfairdisplay-regular;
     font-weight: normal;
     position: relative;
   }
 
-  h2 {
-    font-family: playfairdisplay-italic;
-    font-weight: normal;
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-family: raleway-medium;
-  }
-
   h4 {
     font-size: 1rem; /* changed from 1.5rem */
     font-style: normal;
-  }
-
-  p {
-    font-family: raleway-light;
-    font-size: 15px;
   }
 
   .container {
@@ -484,15 +554,7 @@ footer p a:hover {
 
   .flex-container {
     display: flex;
-  }
-
-  .flex-desc {
-    display: flex;
-    justify-content: center;
-  }
-
-  .white-text {
-    color: white;
+    flex-wrap: nowrap;
   }
 
   img {
@@ -508,40 +570,29 @@ footer p a:hover {
     text-align: center;
   }
 
-  .relate {
-    position: relative;
-    width: 25%;
-    height: 25%;
-  }
-
-  .relate:first-child,
-  .relate:last-child {
-    width: 50%;
-  }
-
   .marginzero {
     display: flex;
+    flex-direction: column;
     margin: 3px 50px;
   }
 
   /*               HEADER                   */
 
   .logo {
-    width: 150px;
-    padding: 0;
-    margin: 0;
+    flex-basis: 20%;
   }
 
   .option {
     text-align: center;
-    margin: 0;
+    margin-top: 30px;
     padding: 0;
     flex-grow: 2.6;
     order: 2;
   }
 
   nav.option ul {
-    font-family: raleway-medium;
+    font-size: 1rem;
+    border-top: 0;
   }
 
   nav.option ul li {
@@ -558,6 +609,7 @@ footer p a:hover {
     padding: 0;
     margin: 0;
     order: 3;
+    flex-basis: 10%;
   }
 
   div.cart img {
@@ -607,7 +659,7 @@ footer p a:hover {
   div#shop h3 a {
     color: white;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1.17rem;
   }
 
   div#shop h3 a:hover {
@@ -629,16 +681,11 @@ footer p a:hover {
     color: #969696;
   }
 
-  /*                  BACKGROUNDS                    */
-  .headbg {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-      url("../images/banner-girl.png") no-repeat center 40px,
-      url("../images/flower-bkgd.jpg") repeat-x center;
-    height: 300px;
-    background-size: contain;
-    background-position: relative;
-    position: relative;
+  #featured .caracell {
+    width: 50%;
   }
+
+  /*                  BACKGROUNDS                    */
 
   .oceanbg {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
@@ -658,7 +705,8 @@ footer p a:hover {
 
   .flex-footer {
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .socmed {
@@ -709,7 +757,6 @@ footer p a:hover {
     list-style: none;
     text-decoration: none;
     padding: 0;
-    display: flex;
     text-align: flex-end;
     padding: 0;
     margin-bottom: 2%;
@@ -831,10 +878,6 @@ footer p a:hover {
     text-align: center;
   }
 
-  .relate {
-    position: relative;
-  }
-
   .marginzero {
     margin: 3px 50px;
   }
@@ -845,13 +888,6 @@ footer p a:hover {
     width: 150px;
     padding: 0;
     margin: 0;
-  }
-
-  .option {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    flex-grow: 2.6;
   }
 
   nav.option ul li {
@@ -911,9 +947,8 @@ footer p a:hover {
     transform: translate(-50%);
   }
 
-  div.flex-shop-container img {
-    position: relative;
-    height: 300px;
+  div#shop h3 a {
+    font-size: 1.17rem;
   }
 
   /*                   FEATURED                       */
@@ -924,6 +959,10 @@ footer p a:hover {
 
   div.caracell h5 {
     color: #969696;
+  }
+
+  #featured .caracell {
+    width: 25%;
   }
 
   /*                  BACKGROUNDS                    */

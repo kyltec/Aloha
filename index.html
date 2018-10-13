@@ -2,13 +2,28 @@
 <html>
 
 <head>
+    <!-- RESET -->
+    <link rel="stylesheet" href="./styles/reset.css">
+
     <meta charset="UTF-8">
     <meta author="Kyle Tecson" description="Aloha Project Page">
     <meta http-equiv="X-UA Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- MY STYLES -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- FONTS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <!-- jQuery from Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
     <title>Aloha Apparal Co.</title>
 </head>
 
@@ -17,7 +32,7 @@
         <div class="container">
             <div class="flex-container">
                 <div class="logo">
-                    <img src="./images/aloha-logo.svg" alt="Aloha Apparal Logo">
+                    <img src="./images/aloha-logo.svg " image height="40px" alt="Aloha Apparal Logo">
                 </div>
                 <nav class="option">
                     <ul>
@@ -28,7 +43,7 @@
                     </ul>
                 </nav>
                 <div class="cart">
-                    <img src="./images/cart-icon.svg" alt="cart icon">
+                    <img src="./images/cart-icon.svg" image height="50px" alt="cart icon">
                 </div>
             </div>
         </div>
@@ -44,44 +59,39 @@
     </header>
 
     <div class="pagecenter">
-        <div class="flex-desc">
-            <h2 id="about">Hand Crafted <span style="font-family:PlayfairDisplay-bold">Styles</span></h2>
+        <h2 id="about">Hand Crafted <span style="font-family:PlayfairDisplay-bold">Styles</span></h2>
+        <div class="text-margin">
+            <p>Aloha Apparal Co. sells only the finest ready-to-travel clothing.<br />
+                Brwose
+                our current selection fo
+                products or sign-up for updates below
+            </p>
         </div>
-        <div class="flex-desc">
-            <div class="text-margin">
-                <p>Aloha Apparal Co. sells only the finest ready-to-travel clothing.<br />
-                    Brwose
-                    our current selection fo
-                    products or sign-up for updates below
-                </p>
 
-            </div>
-        </div>
         <div id="shop">
             <div class="flex-shop-container">
-                <div class="relate">
-                    <img src="./images/mens-category.jpg" alt="Man carrying sunglasses">
+                <div class="relate-wide">
+                    <div class="mens-catagory-shop"></div>
                     <h3><a href="#">MEN'S</a></h3>
                 </div>
-                <div class="relate">
-                    <img src="./images/trends-category.jpg" alt="Woven hat">
+                <div class="relate-square">
+                    <div class="trends-catagory-shop"></div>
                     <h3><a href="#">TRENDS</a></h3>
                 </div>
-                <div class="relate">
-                    <img src="./images/glasses-category.jpg" alt="Sunglasses face down on table">
+                <div class="relate-square">
+                    <div class="glasses-catagory-shop"></div>
                     <h3><a href="#">GLASSES</a></h3>
                 </div>
-                <div class="relate">
-                    <img src="./images/sale-category.jpg" alt="Flowers">
+                <div class="relate-square">
+                    <div class="sales-catagory-shop"></div>
                     <h3><a href="#">SALES</a></h3>
                 </div>
-                <div class="relate">
-                    <img src="./images/bags-category.jpg" alt="Bag">
+                <div class="relate-square">
+                    <div class="bags-catagory-shop"></div>
                     <h3><a href="#">BAGS</a></h3>
                 </div>
-
-                <div class="relate">
-                    <img src="./images/womens-category.jpg" alt="Woman">
+                <div class="relate-wide">
+                    <div class="womens-catagory-shop"></div>
                     <h3><a href="#">WOMEN'S</a></h3>
                 </div>
             </div>
@@ -95,49 +105,63 @@
             </div>
         </div>
     </div>
-    <div id="Featured">
+
+    <div id="featured">
         <div class="caracell">
             <img src="./images/stretch-knit-dress.jpg" alt="stretch knit dress">
             <h5>DRESSES</h5>
             <h4>Stretch Knit Dress</h4>
             <h5>$i69.00</h5>
+        </div>
 
+        <div class="caracell">
             <img src="./images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
             <h5>SHIRTS</h5>
             <h4>Cotton Blue Shirt</h4>
             <h5>$89.00</h5>
-
+        </div>
+        <div class="caracell">
             <img src="./images/checked-stretch-dress.jpg" alt="checked stretch dress">
             <h5>DRESSES</h5>
             <h4>Checked Stretch Dress </h4>
             <h5>$129.00</h5>
-
+        </div>
+        <div class="caracell">
             <img src="./images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
             <h5>BAGS</h5>
             <h4>Blue Hipster Backpack</h4>
             <h5>69.00</h5>
+        </div>
 
+        <div class="caracell">
             <img src="./images/demin-overall-shorts.jpg" alt="denim overall shorts">
             <h5>DENIM</h5>
             <h4>Denim Overall Shorts</h4>
             <h5>$89.00</h5>
+        </div>
 
+        <div class="caracell">
             <img src="./images/pink-dotted-dress.jpg" alt="pink dotted dress">
             <h5>DRESSES</h5>
             <h4>Pink Dotted Dress</h4>
             <h5>$99.00</h5>
+        </div>
 
+        <div class="caracell">
             <img src="./images/blue-silk-dress.jpg" alt="blue silk dress">
             <h5>DRESSES</h5>
             <h4>Blue Silk Dress</h4>
             <h5>$119.00</h5>
+        </div>
 
+        <div class="caracell">
             <img src="./images/cotton-yellow-tshirt.jpg" alt="yellow t-shirt">
             <h5>SHIRTS</h5>
             <h4>Cotton Yellow Tshirt</h4>
             <h5>$39.00</h5>
         </div>
     </div>
+
     <div class="pagecenter">
         <div id="Updates">
             <div class="oceanbg">
@@ -159,6 +183,7 @@
                 </form>
             </div>
         </div>
+
         <footer>
             <div class="container">
                 <div class="flex-footer white-text">
@@ -169,6 +194,7 @@
                         <p style="color: #524d4d">1490 W Broadway</p>
                         <p style="color: #524d4d">Vancouver, BC, Canada</p>
                     </div>
+
                     <div class="flex-socmed socmed">
                         <ul class="marginzero">
                             <li><a href="#"><i class="fab fa-facebook-f"></i><span class="no-text">Facebook</span></a></li>
