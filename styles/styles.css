@@ -180,6 +180,7 @@ img {
   flex-shrink: 0;
   flex-basis: 100%;
   max-width: 100%;
+  position: relative;
 }
 
 .relate-square {
@@ -187,18 +188,17 @@ img {
   flex-shrink: 0;
   flex-basis: 50%;
   max-width: 50%;
+  position: relative;
 }
 
 .relate-square::before {
   content: "";
   display: block;
-  padding-top: 100%;
 }
 
 .relate-wide:before {
   content: "";
   display: block;
-  padding-top: 50%;
 }
 
 .marginzero {
@@ -296,50 +296,58 @@ header ul li a:hover {
 }
 
 .mens-catagory-shop {
-  background: url("../images/mens-category.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/mens-category.jpg") no-repeat center;
   background-size: cover;
   border-left: 0;
   border-right: 0;
+  height: 50vw;
+  margin-bottom: 10px;
 }
 
 .trends-catagory-shop {
-  background: url("../images/trends-category.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/trends-category.jpg") no-repeat center;
   background-size: cover;
-  width: 50%;
   height: 50vw;
+  margin: 0 10px 10px 0;
 }
 
 .glasses-catagory-shop {
-  background: url("../images/glasses-category.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/glasses-category.jpg") no-repeat center;
   background-size: cover;
-  width: 50%;
   height: 50vw;
+  margin-bottom: 10px;
 }
 
 .sales-catagory-shop {
-  background: url("../images/sale-category.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/sale-category.jpg") no-repeat center;
   background-size: cover;
-  width: 50%;
   height: 50vw;
+  margin: 0 10px 10px 0;
 }
 
 .bags-catagory-shop {
-  background: url("../images/bags-category.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/bags-category.jpg") no-repeat center;
   background-size: cover;
-  width: 50%;
   height: 50vw;
+  margin-bottom: 10px;
 }
 
 .womens-catagory-shop {
-  background: url("../images/womens-category.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/womens-category.jpg") no-repeat center;
   background-size: cover;
   border-left: 0;
   border-right: 0;
+  height: 50vw;
 }
 
 div#shop h3 {
   position: absolute;
-  /* z-index: 10; */
   text-align: center;
   top: 50%;
   left: 50%;
@@ -393,6 +401,7 @@ div.caracell h5 {
   height: 55vh;
   position: relative;
   margin-block-start: 50px;
+  margin-bottom: 3px;
 }
 
 /*                           FOOTER                        */
@@ -404,8 +413,11 @@ footer {
 }
 
 .flex-footer {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
 
 .no-text {
@@ -489,7 +501,6 @@ div.address p {
 }
 
 footer p {
-  font-size: 12px;
   text-align: center;
 }
 
