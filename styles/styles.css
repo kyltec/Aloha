@@ -108,9 +108,9 @@ body {
 }
 
 h1 {
-  font-size: 2rem; /* changed from 4rem */
+  font-size: 2rem;
   margin-top: 10px;
-  padding-bottom: 2%; /* changed from 15% */
+  padding-bottom: 2%;
   font-family: playfairdisplay-regular;
   font-weight: normal;
   position: relative;
@@ -168,10 +168,6 @@ p {
 
 img {
   max-width: 100%;
-}
-
-.bgwhite {
-  background-color: white;
 }
 
 .pagecenter {
@@ -252,6 +248,10 @@ nav.option ul li {
 
 div.cart img {
   height: 50px;
+}
+
+div.logo img {
+  height: 40px;
 }
 
 .header-text {
@@ -493,11 +493,7 @@ div.address p {
 .flex-socmed {
   color: white;
   display: inline-block;
-  flex-wrap: wrap;
-  flex-direction: column;
   font-family: raleway-light;
-  justify-content: flex-end;
-  align-content: flex-end;
   margin: 0;
   padding: 0;
 }
@@ -529,45 +525,21 @@ footer p a:hover {
 
 @media all and (min-width: 600px) {
   body {
-    color: #2d2d2d;
     font-size: 16px;
   }
 
   h1 {
     font-size: 2.2rem;
-    margin-top: 10px;
-    padding-bottom: 2%;
-    font-family: playfairdisplay-regular;
-    font-weight: normal;
-    position: relative;
   }
 
   h4 {
-    font-size: 1rem; /* changed from 1.5rem */
+    font-size: 1rem;
     font-style: normal;
-  }
-
-  .container {
-    max-width: 1240px;
-    margin: auto;
   }
 
   .flex-container {
     display: flex;
     flex-wrap: nowrap;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  .bgwhite {
-    background-color: white;
-  }
-
-  .pagecenter {
-    position: relative;
-    text-align: center;
   }
 
   .marginzero {
@@ -583,24 +555,13 @@ footer p a:hover {
   }
 
   .option {
-    text-align: center;
     margin-top: 30px;
-    padding: 0;
-    flex-grow: 2.6;
     order: 2;
   }
 
   nav.option ul {
     font-size: 1rem;
     border-top: 0;
-  }
-
-  nav.option ul li {
-    display: inline-block;
-    list-style: none;
-    padding: auto;
-    margin: 0 2%;
-    padding: 0;
   }
 
   .cart {
@@ -616,28 +577,8 @@ footer p a:hover {
     height: 70px;
   }
 
-  .header-text {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  header h4 {
-    font-family: raleway-light;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  header ul li a {
-    color: #e2574c;
-    text-decoration: none;
-  }
-
-  header ul li a:hover {
-    color: #b64036;
+  div.logo img {
+    height: 60px;
   }
 
   /*                    SHOP                     */
@@ -673,40 +614,19 @@ footer p a:hover {
 
   /*                   FEATURED                       */
 
-  div.caracell h4 {
-    color: #e2574c;
-  }
-
-  div.caracell h5 {
-    color: #969696;
-  }
-
   #featured .caracell {
     width: 50%;
   }
 
   /*                  BACKGROUNDS                    */
 
-  .oceanbg {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-      url("../images/wave-bkgd.jpg") no-repeat bottom;
-    width: 100%;
-    height: 55vh;
-    position: relative;
-  }
-
   /*                           FOOTER                        */
-
-  footer {
-    background-color: #242424;
-    width: 100%;
-    height: auto;
-  }
 
   .flex-footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
   }
 
   .socmed {
@@ -717,15 +637,6 @@ footer p a:hover {
     align-items: center;
     margin: 0;
     padding: 0;
-  }
-
-  div.white-text p a {
-    color: white;
-    text-decoration: none;
-  }
-
-  div.white-text p a:hover {
-    color: #b64036;
   }
 
   input[type="submit"] {
@@ -746,11 +657,6 @@ footer p a:hover {
   input[type="email"],
   input[type="submit"] {
     border-radius: 60px;
-  }
-
-  .address {
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
   ul.marginzero li {
@@ -778,38 +684,20 @@ footer p a:hover {
     text-decoration: none;
   }
 
-  div.address p {
-    font-family: playfairdisplay-regular;
-  }
-
   .no-text {
     display: block;
   }
 
   .flex-socmed {
-    color: white;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-family: raleway-light;
     justify-content: flex-end;
     align-content: flex-end;
-    margin: 0;
-    padding: 0;
   }
 
   footer p {
-    font-size: 12px;
-    text-align: center;
-  }
-
-  footer p a:hover {
-    color: #b64036;
-    text-decoration: none;
-  }
-
-  .sub-loc {
-    font-family: raleway-light;
+    text-align: left;
   }
 }
 
@@ -827,59 +715,21 @@ footer p a:hover {
 /*               DESKTOP              */
 
 @media all and (min-width: 1240px) {
-  body {
-    color: #2d2d2d;
-  }
-
   h1 {
     font-size: 4rem;
-    margin-top: 10px;
     padding-bottom: 15%;
-    font-family: playfairdisplay-regular;
-    font-weight: normal;
   }
 
   h2 {
-    font-family: playfairdisplay-italic;
-    font-weight: normal;
     font-size: 2.5rem;
-  }
-
-  h3 {
-    font-family: raleway-medium;
   }
 
   h4 {
     font-size: 1.5rem;
-    font-style: normal;
   }
 
   p {
-    font-family: raleway-light;
     font-size: 20px;
-  }
-
-  .container {
-    max-width: 1240px;
-    margin: auto;
-  }
-
-  .flex-container {
-    display: flex;
-  }
-
-  .flex-desc {
-    display: flex;
-    justify-content: center;
-  }
-
-  .pagecenter {
-    position: relative;
-    text-align: center;
-  }
-
-  .marginzero {
-    margin: 3px 50px;
   }
 
   /*               HEADER                   */
@@ -898,41 +748,9 @@ footer p a:hover {
     padding: 0;
   }
 
-  .cart {
-    text-align: right;
-    width: 100px;
-    padding: 0;
-    margin: 0;
-  }
-
-  div.cart img {
-    height: 70px;
-  }
-
-  .header-text {
-    text-align: center;
-    position: relative;
-  }
-
-  header h4 {
-    font-family: raleway-light;
-    margin-top: 0;
-  }
-
-  header ul li a {
-    color: #e2574c;
-    text-decoration: none;
-  }
-
-  header ul li a:hover {
-    color: #b64036;
-  }
-
   /*                    SHOP                     */
 
   .flex-shop-container {
-    display: flex;
-    flex-wrap: wrap;
     align-content: center;
     width: 100%;
     margin: 5%, 0;
@@ -952,14 +770,6 @@ footer p a:hover {
   }
 
   /*                   FEATURED                       */
-
-  div.caracell h4 {
-    color: #e2574c;
-  }
-
-  div.caracell h5 {
-    color: #969696;
-  }
 
   #featured .caracell {
     width: 25%;
@@ -984,32 +794,6 @@ footer p a:hover {
 
   /*                           FOOTER                        */
 
-  footer {
-    background-color: #242424;
-    width: 100%;
-    height: 300px;
-  }
-
-  .flex-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .socmed {
-    display: flex;
-    text-align: left;
-    position: relative;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  div.white-text p a:hover {
-    color: #b64036;
-  }
-
   input[type="email"] {
     width: 300px;
     height: 40px;
@@ -1024,39 +808,12 @@ footer p a:hover {
     background-color: #e2574c;
   }
 
-  input[type="submit"]:hover {
-    background-color: #b64036;
-  }
-
   input[type="email"],
   input[type="submit"] {
     border-radius: 60px;
   }
 
-  .address {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .flex-socmed {
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-family: raleway-light;
-    justify-content: flex-end;
-    align-content: flex-end;
-    margin: 0;
-    padding: 0;
-  }
-
   footer p {
     font-size: 14px;
-    text-align: left;
-  }
-
-  footer p a:hover {
-    color: #b64036;
-    text-decoration: none;
   }
 }
