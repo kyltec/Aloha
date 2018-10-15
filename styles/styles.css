@@ -401,7 +401,7 @@ div.caracell h5 {
   height: 55vh;
   position: relative;
   margin-block-start: 50px;
-  margin-bottom: 3px;
+  margin-bottom: 7px;
 }
 
 /*                           FOOTER                        */
@@ -420,8 +420,15 @@ footer {
   height: 300px;
 }
 
+.address-colour {
+  color: rgb(139, 133, 133);
+}
+
 .no-text {
   display: none;
+}
+.line-height {
+  line-height: 2rem;
 }
 
 div.white-text p a {
@@ -501,6 +508,7 @@ div.address p {
 }
 
 footer p {
+  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -541,6 +549,22 @@ footer p a:hover {
   .flex-container {
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  .relate-wide {
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .relate-square {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    max-width: 50%;
+    position: relative;
   }
 
   .marginzero {
@@ -588,6 +612,55 @@ footer p a:hover {
   .flex-shop-container {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .mens-catagory-shop {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../images/mens-category.jpg") no-repeat center;
+    background-size: cover;
+    height: 25vw;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .trends-catagory-shop {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../images/trends-category.jpg") no-repeat center;
+    background-size: cover;
+    height: 25vw;
+    margin: 0 10px 10px 0;
+  }
+
+  .glasses-catagory-shop {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../images/glasses-category.jpg") no-repeat center;
+    background-size: cover;
+    height: 25vw;
+    margin-bottom: 10px;
+  }
+
+  .sales-catagory-shop {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../images/sale-category.jpg") no-repeat center;
+    background-size: cover;
+    height: 25vw;
+    margin: 0 10px 10px 0;
+  }
+
+  .bags-catagory-shop {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../images/bags-category.jpg") no-repeat center;
+    background-size: cover;
+    height: 25vw;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .womens-catagory-shop {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../images/womens-category.jpg") no-repeat center;
+    background-size: cover;
+    height: 25vw;
   }
 
   div#shop h3 {
