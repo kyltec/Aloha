@@ -136,7 +136,7 @@ h4 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0;
   margin: 12px;
 }
@@ -408,16 +408,6 @@ footer {
   text-align: center;
 }
 
-.socmed {
-  display: flex;
-  text-align: left;
-  position: relative;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
 .no-text {
   display: none;
 }
@@ -546,6 +536,7 @@ footer p a:hover {
     display: flex;
     flex-direction: column;
     margin: 3px 50px;
+    align-items: flex-start;
   }
 
   /*               HEADER                   */
@@ -685,7 +676,8 @@ footer p a:hover {
   }
 
   .no-text {
-    display: block;
+    display: inline-block;
+    line-height: 2rem;
   }
 
   .flex-socmed {
