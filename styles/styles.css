@@ -131,7 +131,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem; /* changed from 1.5rem */
+  font-size: 1rem;
   font-style: normal;
 }
 
@@ -281,7 +281,6 @@ header ul li a:hover {
 /*                     ABOUT                     */
 
 .text-margin p {
-  font-size: 1.3rem;
   padding: 5%;
   line-height: 2rem;
 }
@@ -373,9 +372,12 @@ div.flex-shop-container img {
 
 div.caracell h4 {
   color: #e2574c;
+  font-family: "playfairdisplay-regular";
+  line-height: 2rem;
 }
 
 div.caracell h5 {
+  font-weight: 400;
   color: #969696;
 }
 
@@ -468,15 +470,16 @@ ul.marginzero li a:hover {
 input[type="email"] {
   height: 40px;
   width: 100%;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 input[type="submit"] {
   width: 120px;
   height: 40px;
-  font-size: 20px;
+  font-size: 1rem;
   color: white;
   background-color: #e2574c;
+  position: absolute;
   top: 0;
   right: 0;
 }
@@ -541,9 +544,8 @@ footer p a:hover {
     font-size: 2.2rem;
   }
 
-  h4 {
-    font-size: 1rem;
-    font-style: normal;
+  h2 {
+    margin-top: 7%;
   }
 
   .flex-container {
@@ -552,19 +554,13 @@ footer p a:hover {
   }
 
   .relate-wide {
-    flex-grow: 2;
-    flex-shrink: 0;
     flex-basis: 50%;
     max-width: 100%;
-    position: relative;
   }
 
   .relate-square {
-    flex-grow: 1;
-    flex-shrink: 0;
     flex-basis: 25%;
     max-width: 50%;
-    position: relative;
   }
 
   .marginzero {
@@ -609,72 +605,35 @@ footer p a:hover {
 
   /*                    SHOP                     */
 
-  .flex-shop-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .mens-catagory-shop {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../images/mens-category.jpg") no-repeat center;
-    background-size: cover;
     height: 25vw;
-    margin-bottom: 10px;
     margin-right: 10px;
   }
 
   .trends-catagory-shop {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../images/trends-category.jpg") no-repeat center;
-    background-size: cover;
     height: 25vw;
     margin: 0 10px 10px 0;
   }
 
   .glasses-catagory-shop {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../images/glasses-category.jpg") no-repeat center;
-    background-size: cover;
     height: 25vw;
-    margin-bottom: 10px;
   }
 
   .sales-catagory-shop {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../images/sale-category.jpg") no-repeat center;
-    background-size: cover;
     height: 25vw;
     margin: 0 10px 10px 0;
   }
 
   .bags-catagory-shop {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../images/bags-category.jpg") no-repeat center;
-    background-size: cover;
     height: 25vw;
-    margin-bottom: 10px;
     margin-right: 10px;
   }
 
   .womens-catagory-shop {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../images/womens-category.jpg") no-repeat center;
-    background-size: cover;
     height: 25vw;
   }
 
-  div#shop h3 {
-    position: absolute;
-    z-index: 10;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
   div#shop h3 a {
-    color: white;
-    text-decoration: none;
     font-size: 1.17rem;
   }
 
@@ -714,32 +673,11 @@ footer p a:hover {
     padding: 0;
   }
 
-  input[type="submit"] {
-    width: 120px;
-    height: 40px;
-    font-size: 20px;
-    color: white;
-    background-color: #e2574c;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  input[type="submit"]:hover {
-    background-color: #b64036;
-  }
-
-  input[type="email"],
-  input[type="submit"] {
-    border-radius: 60px;
-  }
-
   ul.marginzero li {
     list-style: none;
     text-decoration: none;
     padding: 0;
     text-align: flex-end;
-    padding: 0;
     margin-bottom: 2%;
   }
 
@@ -816,29 +754,11 @@ footer p a:hover {
     margin: 0;
   }
 
-  nav.option ul li {
-    display: inline-block;
-    list-style: none;
-    padding: auto;
-    margin: 0 2%;
-    padding: 0;
-  }
-
   /*                    SHOP                     */
 
   .flex-shop-container {
     align-content: center;
-    width: 100%;
     margin: 5%, 0;
-  }
-
-  div#shop h3 {
-    position: absolute;
-    z-index: 10;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
   }
 
   div#shop h3 a {
@@ -853,41 +773,11 @@ footer p a:hover {
 
   /*                  BACKGROUNDS                    */
   .headbg {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-      url("../images/banner-girl.png") no-repeat center 70px,
-      url("../images/flower-bkgd.jpg") repeat-x center;
     height: 550px;
     background-size: contain;
-    background-position: relative;
-  }
-
-  .oceanbg {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-      url("../images/wave-bkgd.jpg") no-repeat bottom;
-    width: 100%;
-    position: relative;
   }
 
   /*                           FOOTER                        */
-
-  input[type="email"] {
-    width: 300px;
-    height: 40px;
-    font-size: 20px;
-  }
-
-  input[type="submit"] {
-    width: 120px;
-    height: 40px;
-    font-size: 20px;
-    color: white;
-    background-color: #e2574c;
-  }
-
-  input[type="email"],
-  input[type="submit"] {
-    border-radius: 60px;
-  }
 
   footer p {
     font-size: 14px;

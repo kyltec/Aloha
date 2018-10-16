@@ -47,15 +47,16 @@ $(document).ready(function() {
   $("#featured").flickity({
     // options
     cellAlign: "left",
-    contain: true
+    contain: true,
+    prevNextButtons: false
   }); // end of carousel
 
   $(".subscribe-form").on("submit", function(event) {
     event.preventDefault();
     if ($("#my-text-input").val() == "") {
-      alert("You missed the field.");
+      alert("Please submit a valid email address.");
     } else {
-      alert("Thanks for filling the field!");
+      alert("Thanks for Subscribing!");
     }
   }); //end of subscibe event
 }); //end of doc ready
