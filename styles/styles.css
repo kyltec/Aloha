@@ -206,6 +206,10 @@ img {
   padding: 0;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 2px #524f4f;
+}
+
 /*               HEADER                   */
 
 .logo {
@@ -763,7 +767,7 @@ footer p a:hover {
   }
 
   div#shop h3 a {
-    font-size: 1.17rem;
+    font-size: 2.17rem;
   }
 
   /*                   FEATURED                       */
