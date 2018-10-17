@@ -248,6 +248,7 @@ nav.option ul li {
 
 div.cart img {
   height: 50px;
+  cursor: pointer;
 }
 
 div.logo img {
