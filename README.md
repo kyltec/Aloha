@@ -8,15 +8,15 @@ This is a shopping website that has a responsive design that can be displayed in
 
 ## Desktop
 
-<img src="./screenshots/aloha-desktop.png" alt="Aloha Screenshot Desktio Ver.">
+<img src="./screenshots/aloha-desktop.png" alt="Aloha Screenshot Desktio Ver." width="800px" height="500px">
 
 ## Tablet
 
-<img src="./screenshots/aloha-tablet.png" alt="Aloha Screenshot Tablet Ver.">
+<img src="./screenshots/aloha-tablet.png" alt="Aloha Screenshot Tablet Ver." width="800px" height="500px">
 
 ## Mobile
 
-<img src="./screenshots/aloha-mobile.png" alt="Aloha Screenshot Mobile Ver.">
+<img src="./screenshots/aloha-mobile.png" alt="Aloha Screenshot Mobile Ver." width="400px" height="800px">
 
 **Setup Instruction**
 
