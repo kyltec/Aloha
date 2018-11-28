@@ -4,6 +4,20 @@
 
 This is a shopping website that has a responsive design that can be displayed in three different ways depending on the device used (mobile, tablet, desktop).
 
+## Screenshots
+
+## Desktop
+
+<img src="./screenshots/aloha-desktop.png" alt="Aloha Screenshot Desktio Ver.">
+
+## Tablet
+
+<img src="./screenshots/aloha-tablet.png" alt="Aloha Screenshot Tablet Ver.">
+
+## Mobile
+
+<img src="./screenshots/aloha-mobile.png" alt="Aloha Screenshot Mobile Ver.">
+
 **Setup Instruction**
 
 Go into repository and select latest version.
@@ -29,3 +43,8 @@ Transfonter - used for getting fonts used for this website
 **Acknowledgements**
 
 Thanks to all my classmates and instructors that helped me on this project.
+
+**Things I Learned**
+
+How to use flexbox.
+How to create a responsive website.

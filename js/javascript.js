@@ -1,4 +1,3 @@
-console.log("Are you there");
 $(document).ready(function() {
   // Select all links with hashes
   $('a[href*="#"]')
