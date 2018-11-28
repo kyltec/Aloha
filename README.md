@@ -12,7 +12,7 @@ This is a shopping website that has a responsive design that can be displayed in
 
 ## Tablet
 
-<img src="./screenshots/aloha-tablet.png" alt="Aloha Screenshot Tablet Ver." width="600px" height="400px">
+<img src="./screenshots/aloha-tablet.png" alt="Aloha Screenshot Tablet Ver." width="600px" height="600px">
 
 ## Mobile
 
